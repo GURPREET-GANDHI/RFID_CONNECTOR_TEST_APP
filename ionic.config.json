@@ -1,0 +1,8 @@
+{
+  "name": "Planon_RFID_Services",
+  "app_id": "planon_rfid_services",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

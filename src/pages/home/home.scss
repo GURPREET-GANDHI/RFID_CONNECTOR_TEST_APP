@@ -1,0 +1,23 @@
+page-home {
+    .container {
+        position: absolute;
+        min-width: 200px;
+        width: 25%;
+    } 
+      
+    .container button {
+        display: block;            
+        width: 100%;
+        margin: 2px;
+        text-align: center;
+    }
+    
+    .details {
+        position: absolute;
+        right: 5px;
+        margin: 10px;
+        width: 62%;
+    }
+
+
+}

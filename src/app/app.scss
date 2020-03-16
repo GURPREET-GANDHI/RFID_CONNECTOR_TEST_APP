@@ -1,0 +1,108 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+body {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.alertCustomCss {
+    // text color for basic alerts
+    //color: white; 
+
+    // alert modal page bg color. Warning this will remove the alert transparency
+    //background-color: color($colors, light, base); 
+
+    button {
+        color: white !important; // button text color
+        background-color: #488aff !important;
+            //button bg color
+    }
+
+    .alert-message {
+        color: black; // text color for confirm alerts
+    }
+
+    // .alert-wrapper {
+    //     background-color: #488aff; // bg color of alert content
+    // }
+  }
+
+// ion-modal.custom-popup{ @media (min-height: 500px) {
+    ion-modal.custom-popup {
+        @media (min-height: 500px) {
+          ion-backdrop {
+            visibility: visible !important;
+            // background-color: gray !important;
+          }
+        }
+      
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: $z-index-overlay;
+      
+        display: flex;
+      
+        align-items: center;
+        justify-content: center;
+      
+        contain: strict;
+        .modal-wrapper {
+          &,
+          .ion-page,
+          .ion-page .content,
+          .ion-page .content .scroll-content {
+            contain: content;
+            position: relative;
+            top: auto;
+            left: auto;
+          }
+      
+          z-index: $z-index-overlay-wrapper;
+          display: flex;
+          overflow: auto;
+      
+          flex-direction: column;
+      
+          min-width: $alert-min-width;
+          min-height: 200px;
+          max-height: $alert-max-height;
+      
+          opacity: 0;
+        //   overflow-wrap: break-word;
+        // white-space: normal;
+          height: auto;
+          max-width: $alert-md-max-width;
+          border-radius: $alert-md-border-radius;
+          background-color: $alert-md-background-color;
+          color: white;
+          box-shadow: $alert-md-box-shadow;
+      
+          .ion-page .content {
+            background-color: color($colors, light);
+          }
+        }
+      }
+
+.resultArea{
+    padding: 7px;
+    font-size: 16px;
+}

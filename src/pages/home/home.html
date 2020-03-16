@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>RFID connector</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <!-- <button ion-button secondary button (click)="testUI()">testUI</button><br> -->
+    <button ion-button secondary button (click)="getDeviceList()">getDeviceList</button><br>
+    <button ion-button secondary button (click)="connect()">connect</button><br>
+    <button ion-button secondary button (click)="isConnected()">isConnected</button><br>
+    <button ion-button secondary button (click)="disconnect()">disconnect</button><br>
+    <button ion-button secondary button (click)="getDeviceInfo()">getDeviceInfo</button><br>
+    <button ion-button secondary button (click)="scanRFIDs()">scanRFIDs</button><br>
+    <button ion-button secondary button (click)="search()">search</button><br>
+    <button ion-button secondary button (click)="setOutputPower()">setOutputPower</button><br>
+    <button ion-button secondary button (click)="subscribeScanner()">Subscribe</button><br>
+    <button ion-button secondary button (click)="unsubscribeScanner()">Unsubscribe</button><br>
+    <!-- <button ion-button secondary button (click)="testListenerActivate()">Subscribe</button><br>
+    <button ion-button secondary button (click)="testListenerDeactivate()">Unsubscribe</button><br> -->
+    <button ion-button secondary button (click)="startSearch()">startSearch</button><br>
+    <button ion-button secondary button (click)="stopSearch()">stopSearch</button><br>
+  </div>
+  <!-- <div class="details"> {{resultData}}</div> -->
+</ion-content>
